@@ -12,7 +12,7 @@ const getBooksByTerm = (SearchTerm, setMovies) => {
     },
   }).then((response) => {
     console.log(response);
-    setMovies(response.data);
+    setMovies(response.data.items);
   });
 };
 
