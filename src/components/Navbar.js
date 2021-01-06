@@ -10,13 +10,13 @@ const Navbar = () => {
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
-              <a href="sass.html">Sass</a>
+              <a href="sass.html">Cart</a>
             </li>
             <li>
-              <a href="badges.html">Components</a>
+              <a href="badges.html">Profile</a>
             </li>
             <li>
-              <a href="collapsible.html">JavaScript</a>
+              <a href="collapsible.html">About</a>
             </li>
           </ul>
         </div>

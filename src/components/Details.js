@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 
-const Book = (props) => {
-  const ImageURL = props.data.volumeInfo.imageLinks.thumbnail;
-  const Title = props.data.volumeInfo.title;
-  const Authors = props.data.volumeInfo.authors;
+const Details = (props) => {
+  const ImageURL = props.data.data.volumeInfo.imageLinks.thumbnail;
+  const Title = props.data.data.volumeInfo.title;
+  const Authors = props.data.data.volumeInfo.authors;
   return (
     <div className="col s12 m4">
       <div className="card">
@@ -16,13 +16,11 @@ const Book = (props) => {
           <p>{Authors}</p>
         </div>
         <div className="card-action">
-          <Link to={{ pathname: "/details", state: { book: props } }}>
-            Details
-          </Link>
+          <p>{props.data.data.volumeInfo.publisher}</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Book;
+export default Details;
